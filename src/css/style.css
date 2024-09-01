@@ -1,0 +1,281 @@
+body {
+    background-color: #04141c;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.cabecalho {
+    background: linear-gradient(90deg, rgba(18, 56, 52, 1) 0%, rgba(16, 119, 107, 1) 21%, rgb(58, 172, 151) 50%, rgba(16, 119, 107, 1) 82%, rgba(18, 56, 52, 1) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #083146;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .logo img {
+    max-width: 250px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.cabecalho .menu li a {
+    padding: 29px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "PT Serif";
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    scroll-behavior: smooth;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    animation: fadeInDown 2s;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes img {
+    max-width: 200px;
+}
+
+
+.home .informacoes .titulo {
+    font-size: 40px;
+    font-family: "PT Serif";
+}
+
+.home .informacoes .texto {
+    font-size: 16px;
+    font-family: "PT Serif";
+    line-height: 1.6;
+}
+
+.assistir-comprar {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn-comprar,
+.btn-plataforma,
+.btn-assistir {
+    background-color: rgb(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'PT Serif';
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.btn-plataforma {
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-comprar:hover,
+.btn-assistir:hover {
+    background-color: rgba(63, 184, 162, 1);
+    color: #fff;
+    transition: all .3s ease-in;
+
+}
+
+.compre-ja .capa-do-jogo {
+    width: 270px;
+}
+
+.compre-ja {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeInRight 2s;
+    align-items: center;
+    padding: 50px;
+}
+
+.compre-ja .titulo {
+    font-family: "PT Serif";
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.compre-ja .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(18, 56, 52, 1);
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compre-ja .informacoes h3 {
+    font-family: "PT Serif";
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.compre-ja .informacoes p {
+    color: #e8e8e8;
+    font-family: 'PT Serif';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.compre-ja .btn-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    opacity: 0;
+}
+.compre-ja .btn-plataforma .plataformas.ativo {
+    opacity: 1;
+    display: flex;
+}
+
+.compre-ja .btn-plataforma .plataformas li {
+    padding: 20px;
+}
+
+.logo-steam {
+    width: 100px;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+    transition: all 0.3s;
+}
+
+.compre-ja  .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color: #00439c;
+}
+.compre-ja  .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+    transition: all 0.3s;
+}
+
+.compre-ja  .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+    transition: all 0.3s;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #003172; 
+    transition: all 0.3s;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #003172;
+}
+.compre-ja .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #000; 
+    transition: all 0.3s;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #000;
+}
+
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+  }
+  
+  15% {
+      opacity: 0;
+      transform: translateX(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      animation-delay: 0.5s;
+  }
+  
+  15% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  }
